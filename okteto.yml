@@ -1,0 +1,13 @@
+name: project-management-dashboard
+autocreate: true
+image:
+  name: okteto.dev/project-management-dashboard:dev
+  context: .
+  target: dev
+command: bash
+forward:
+  - 8080:8080
+sync:
+  - .:/usr/src/app
+persistentVolume:
+  enabled: false
