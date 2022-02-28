@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Card, CardHeader, CardContent } from '@material-ui/core';
+import { Card, CardContent } from '@material-ui/core';
 import {
     ResponsiveContainer,
     XAxis,

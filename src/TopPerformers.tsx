@@ -9,7 +9,6 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Avatar from '@material-ui/core/Avatar';
 import { makeStyles } from '@material-ui/core/styles';
 import { Link } from 'react-router-dom';
-import { useTranslate } from 'react-admin';
 import { Customer, Order } from './types';
 
 interface Props {
@@ -30,7 +29,6 @@ const useStyles = makeStyles(theme => ({
 const TopPerformers = (props: Props) => {
     const { orders = [], customers = {} } = props;
     const classes = useStyles();
-    const translate = useTranslate();
     return (
         <Card className={classes.root}>
             <CardHeader title="Top Performers" />

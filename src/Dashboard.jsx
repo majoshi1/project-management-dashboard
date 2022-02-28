@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, CSSProperties } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 
 import Timeline from '@material-ui/icons/Timeline';
 import Search from '@material-ui/icons/Search';

@@ -13,14 +13,6 @@ import NotificationsIcon from '@material-ui/icons/Notifications';
 import { makeStyles } from '@material-ui/core/styles';
 import { Link } from 'react-router-dom';
 
-
-import { Customer, Order } from './types';
-
-interface Props {
-    orders?: Order[];
-    customers?: { [key: string]: Customer };
-}
-
 const Spacer = () => <span style={{ width: '1em' }} />;
 
 const useStyles = makeStyles(theme => ({
@@ -33,8 +25,7 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
-const TodayBar = (props: Props) => {
-    const { orders = [], customers = {} } = props;
+const TodayBar = () => {
     const classes = useStyles();
     return (
         <Card className={classes.root}>
@@ -45,11 +36,12 @@ const TodayBar = (props: Props) => {
                     component={Link}
                     to={`/commands/1`}
                 >
-                    <ListItemAvatar>                            
-                        <KeyboardArrowLeft/>
-                        <Spacer />
-                        <KeyboardArrowRight/>
-                        <Spacer/>
+                    <ListItemAvatar>     
+                        <div>
+                            <KeyboardArrowLeft/>
+                            <Spacer />
+                            <KeyboardArrowRight/>
+                        </div>                       
                     </ListItemAvatar>
                     <ListItemText
                         primary=""
