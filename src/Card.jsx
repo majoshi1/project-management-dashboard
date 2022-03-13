@@ -4,7 +4,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardHeader from '@material-ui/core/CardHeader';
 
 export default (props) => (
-    <Card>
+    <Card style={{width: props.width ? props.width : "unset"}}>
         <CardHeader title={props.title} />
         <CardContent>{props.details}</CardContent>
     </Card>

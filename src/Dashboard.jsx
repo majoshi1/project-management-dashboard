@@ -123,13 +123,13 @@ const Dashboard = () => {
                         <h3>Monthly Progress</h3>
                     </div>
                     <div style={styles.flex}>
-                        <Card title="16" details="Team Members"/>
+                        <Card title="16" width="25%" details="Team Members"/>
                         <Spacer /><Spacer />
-                        <Card title="24" details="Attachments"/>
+                        <Card title="24" width="25%" details="Attachments"/>
                         <Spacer /><Spacer />
-                        <Card title="32" details="Access Credits"/>
+                        <Card title="32" width="25%" details="Access Credits"/>
                         <Spacer /><Spacer />
-                        <Card title="40" details="Likes"/>
+                        <Card title="40" width="25%" details="Likes"/>
                     </div>
                     <div style={styles.singleCol}>
                         <TimeSeriesChart data={recentOrders} />
